@@ -1,0 +1,4 @@
+@charset "UTF-8";
+.breadcrumb-item + .breadcrumb-item::before {
+  color: #999;
+  content: var(--bs-breadcrumb-divider, "–"); }

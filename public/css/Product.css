@@ -1,0 +1,105 @@
+.product .owl-carousel .owl-video-play-icon {
+  margin-top: calc(100% / 3);
+  background: url(../images/owl.youtube.png) no-repeat; }
+.product-notice {
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 10px;
+  display: inline-block;
+  margin-left: 5px; }
+  .product-notice span {
+    border-radius: 4px;
+    padding: 5px 10px; }
+.product__price {
+  margin-top: -10px;
+  font-weight: 600;
+  font-size: 36px; }
+  .product__price_discount {
+    color: #dc3545; }
+.product .point {
+  height: 10px;
+  width: 10px;
+  border-radius: 10px;
+  opacity: 0.8; }
+.product__out {
+  color: #adb5bd; }
+.product__block {
+  margin-top: 20px;
+  color: #6c757d; }
+@media only screen and (max-width: 359px) {
+  .product h1 {
+    margin-top: 20px; }
+  .product__basket {
+    display: grid; }
+  .product__info-right {
+    margin-top: 20px; }
+  .product__notice {
+    text-align: center; } }
+@media only screen and (min-width: 360px) {
+  .product h1 {
+    margin-top: 20px; }
+  .product__basket {
+    display: grid; }
+  .product__info-right {
+    margin-top: 20px; }
+  .product__notice {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center; } }
+@media only screen and (min-width: 411px) {
+  .product h1 {
+    margin-top: 20px; }
+  .product__basket {
+    display: grid; }
+  .product__info {
+    background-color: inherit;
+    padding: 0;
+    border: 0; }
+    .product__info-right {
+      margin-top: 0; }
+  .product__notice {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-align: center; } }
+@media only screen and (min-width: 768px) {
+  .product h1 {
+    margin-top: 10px; }
+  .product__basket {
+    display: block; }
+  .product__info {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    margin-top: 40px;
+    padding: 20px; }
+    .product__info-right {
+      margin-top: 0;
+      padding-left: 0; }
+  .product__notice {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-align: center; } }
+@media only screen and (min-width: 992px) {
+  .product h1 {
+    margin-top: auto; }
+  .product__info-right {
+    padding-left: 60px; }
+  .product__notice {
+    width: auto;
+    text-align: right;
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 10px; }
+  .product-notice {
+    display: inline-block; } }
+@media only screen and (min-width: 1200px) {
+  .product h1 {
+    margin-top: auto; }
+  .product__notice {
+    position: absolute;
+    right: 0;
+    width: auto;
+    text-align: right;
+    margin: 0; }
+  .product-notice {
+    display: block; } }

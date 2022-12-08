@@ -1,0 +1,15 @@
+.navbar {
+  background-color: #fff;
+  box-shadow: 0 0 20px 0 #999; }
+  .navbar a:link,
+  .navbar a:visited {
+    color: #666; }
+  .navbar a:hover {
+    color: #444; }
+
+@media only screen and (min-width: 992px) {
+  .nav__link_delivery, .nav__link_login {
+    display: none; } }
+@media only screen and (min-width: 1200px) {
+  .nav__link_delivery, .nav__link_login {
+    display: inline-block; } }

@@ -1,0 +1,1 @@
+.menu__left{min-width:160px;padding:0 20px}.menu__left .active{padding:4px 10px 6px 10px}.menu__left div{position:sticky;top:80px}@media only screen and (max-width: 991px){.menu{margin-top:10px;padding:20px 15px}.menu__left{display:none}}@media only screen and (min-width: 992px){.menu__left{display:block}}

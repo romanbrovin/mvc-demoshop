@@ -1,0 +1,560 @@
+html
+    height: 100%
+
+
+body
+    font-family: 'Ubuntu', sans-serif
+    line-height: 1.5
+    height: 100%
+    color: #444
+    background-color: #fbfbfb
+
+
+.wrapper
+    min-height: 100%
+    padding-top: 70px
+    padding-bottom: 350px
+
+
+input[type="file"]
+    display: none
+
+h1, h2, h3, h4
+    font-weight: bold
+
+.marker
+    position: relative
+    z-index: 10
+
+    span::before
+        content: ""
+        position: absolute
+        width: calc(100% / 2)
+        transform: skew(-12deg) translateX(-2%)
+        opacity: 0.5
+        z-index: -1
+
+    &_h1::before
+        background-color: #fd7e14
+
+    &_h2::before
+        background-color: #ffc107
+
+    &_h3::before
+        background-color: #20c997
+
+    &_h4::before
+        background-color: #0dcaf0
+
+
+// убираем сдвиг у fancybox
+.compensate-for-scrollbar
+    margin-right: 0 !important
+
+
+.border
+    &-all
+        &-teal
+            border: 2px solid #20c997 !important
+
+        &-yellow
+            border: 2px solid #ffc107 !important
+
+        &-red
+            border: 2px solid #dc3545 !important
+
+    &-left
+        &-yellow
+            border-left: 4px solid #ffc107 !important
+
+        &-teal
+            border-left: 4px solid #20c997 !important
+
+
+.box-shadow
+    &:hover
+        box-shadow: 0 0 10px #ccc
+
+
+.text
+    &-indigo
+        color: #6610f2
+
+    &-orange
+        color: #fd7e14
+
+    &-yellow
+        color: #ffc107
+
+    &-teal
+        color: #20c997
+
+    &-purple
+        color: #6f42c1
+
+    &-gray-300
+        color: #dee2e6
+
+    &-gray-400
+        color: #ced4da
+
+    &-gray-500
+        color: #adb5bd
+
+    &-gray-600
+        color: #6c757d
+
+.bg
+    &-gray-100
+        background-color: #f8f9fa
+
+    &-gray-200
+        background-color: #e9ecef
+
+    &-gray-300
+        background-color: #dee2e6
+
+    &-gray-600
+        background-color: #6c757d
+
+    &-gray-800
+        background-color: #343a40
+
+    &-indigo
+        background-color: #6610f2
+
+    &-purple
+        background-color: #6f42c1
+
+    &-cyan
+        background-color: #0dcaf0
+
+    &-green
+        background-color: #198754
+
+    &-blue
+        background-color: #0d6efd
+
+    &-orange
+        background-color: #fd7e14
+
+    &-red
+        background-color: #dc3545
+
+    &-pink
+        background-color: #d63384
+
+    &-yellow
+        background-color: #ffc107
+
+    &-teal
+        background-color: #20c997
+
+
+.modal-footer-id
+    font-size: 12px
+    color: #ced4da
+    position: absolute
+    left: 15px
+
+
+a:link,
+a:visited,
+a:hover
+    text-decoration: none
+    outline: none
+
+
+.bbb
+    border: 1px solid red !important
+
+.mt
+    &-60
+        margin-top: 60px
+
+    &-120
+        margin-top: 120px
+
+.mb
+    &-60
+        margin-bottom: 60px
+
+    &-120
+        margin-bottom: 120px
+
+.w
+    &-40
+        width: 40px
+
+    &-45
+        width: 45px
+
+    &-65
+        width: 65px
+
+.ml--15
+    margin-left: -15px
+
+.mt--2
+    margin-top: -2px
+
+
+.dotted
+    border-bottom: 2px dotted
+    cursor: help
+
+
+.point
+    display: inline-block
+    height: 7px
+    width: 7px
+    border-radius: 7px
+
+    &:first-child
+        margin-left: 3px
+
+    &_lg
+        height: 10px
+        width: 10px
+        border-radius: 10px
+
+.btn-round
+    height: 24px
+    width: 24px
+    line-height: 24px
+    font-size: 24px
+    border-radius: 24px
+    text-align: center
+    cursor: pointer
+
+    &_small
+        height: 18px
+        width: 18px
+        line-height: 16px
+        font-size: 16px
+
+    &_delete
+        &::before
+            content: '×'
+
+        background-color: #f2dede
+        color: #dc3545
+
+        &:hover
+            background-color: #ebcccc
+
+    &_minus::before
+        content: '–'
+
+    &_plus::before
+        content: '+'
+
+    &_event
+        background-color: #d9edf7
+        color: #0d6efd
+
+        &:hover
+            background-color: #c4e3f3
+
+
+    &_success
+        background-color: #dff0d8
+        color: #20c997
+
+        &:hover
+            background-color: #c2e2b6
+
+    &_avatar
+        margin-top: -10px
+        margin-left: -5px
+
+        &::before
+            content: 'а'
+
+    &_disable
+        background-color: #ddd
+        color: #999
+        pointer-events: none
+
+
+.btn
+    &-delete
+        position: absolute
+        margin-top: -5px
+        margin-right: -5px
+
+    &-photo
+        cursor: pointer
+
+
+.tooltip
+    --bs-tooltip-bg: #444
+    --bs-tooltip-color: #fff
+    --bs-tooltip-font-size: 12px
+
+
+.font
+    &-10
+        font-size: 10px
+
+    &-12
+        font-size: 12px
+
+    &-14
+        font-size: 14px
+
+    &-16
+        font-size: 16px
+
+    &-18
+        font-size: 18px
+
+    &-24
+        font-size: 24px
+
+    &-36
+        font-size: 36px
+
+    &-48
+        font-size: 48px
+
+
+.u
+    &-AhunterSuggestions
+        border: 1px solid #ccc
+        background: white
+        overflow: auto
+        border-radius: 4px
+        cursor: pointer
+
+
+    &-AhunterSuggestion
+        padding: 5px
+        white-space: nowrap
+        overflow: hidden
+
+        &:hover
+            background: #eee
+
+
+.order-status
+    position: absolute
+    margin-left: 25px
+    padding: 10px 20px
+    display: none
+    z-index: 10
+    background-color: #fff
+    border: 1px solid #ddd
+    border-radius: 6px
+
+
+.oops
+    font-size: 24px
+    margin-top: 60px
+    margin-bottom: 60px
+    text-align: center
+
+
+#captcha_code
+    position: absolute
+    right: 20px
+    top: 12px
+    z-index: 9999
+
+
+.discount
+    &_post
+        margin-left: 10px
+        position: absolute
+
+    &_product
+        margin-left: 20px
+
+    &__substrate
+        color: #dc3545
+
+        &_product
+            font-size: 80px
+
+        &_post
+            font-size: 50px
+
+    &__text
+        color: #fff
+        position: absolute
+        font-weight: bold
+
+        &_product
+            font-size: 24px
+
+        &_post
+            font-size: 16px
+
+
+.categories
+    img:hover
+        transform: rotate(3deg)
+        -webkit-transform: rotate(3deg)
+
+
+.linear-wipe
+    background: linear-gradient(to right, #dc3545 0%, #fd7e14 40%, #d63384 60%, #ffc107 80%)
+    background-size: 200% auto
+
+    color: #000
+    background-clip: text
+    text-fill-color: transparent
+    -webkit-background-clip: text
+    -webkit-text-fill-color: transparent
+
+    animation: shine 2s linear infinite
+
+    @keyframes shine
+        to
+            background-position: 200% center
+
+
+.info-block
+    padding: 40px 10px
+    text-align: center
+    border-radius: 6px
+    font-size: 24px
+    font-weight: 600
+    margin-top: 40px
+    border: 1px solid #ddd
+    background-color: #fff
+
+    &:hover
+        box-shadow: 0 0 10px #ccc
+
+    p
+        margin-bottom: 20px
+
+    img
+        width: 150px
+
+
+@media only screen and (max-width: 359px)
+    h1
+        font-size: 30px
+        margin-top: 20px
+
+    .marker
+        &_h1::before
+            top: 28px
+            height: 8px
+
+        &_h2::before
+            top: 22px
+            height: 8px
+
+        &_h3::before
+            top: 22px
+            height: 8px
+            left: 3px
+
+        &_h4::before
+            top: 20px
+            height: 8px
+
+
+@media only screen and (min-width: 360px)
+    h1
+        font-size: 30px
+        margin-top: 20px
+
+    .marker
+        &_h1::before
+            top: 30px
+            height: 8px
+            left: 2px
+
+        &_h2::before
+            top: 22px
+            height: 8px
+
+        &_h3::before
+            top: 22px
+            height: 8px
+            left: 3px
+
+        &_h4::before
+            top: 20px
+            height: 8px
+
+@media only screen and (min-width: 411px)
+    h1
+        font-size: 40px
+        margin-top: 20px
+
+    h2
+        font-size: 30px
+
+    .marker
+        &_h1::before
+            top: 38px
+            height: 10px
+            left: 4px
+
+        &_h2::before
+            top: 26px
+            height: 10px
+
+        &_h3::before
+            top: 22px
+            height: 10px
+            left: 3px
+
+
+@media only screen and (min-width: 768px)
+    h1
+        font-size: 48px
+        margin-top: 10px
+
+    .marker
+        &_h1::before
+            top: 42px
+            height: 10px
+            left: 4px
+
+        &_h2::before
+            top: 26px
+            height: 10px
+
+    .info-block
+        margin-left: 0
+        margin-right: 0
+
+@media only screen and (min-width: 992px)
+    h1
+        font-size: 48px
+        margin-top: auto
+
+    .marker
+        &_h2::before
+            top: 28px
+            height: 10px
+
+    .info-block
+        margin-left: 20px
+        margin-right: -10px
+
+
+@media only screen and (min-width: 1200px)
+    h1
+        font-size: 48px
+
+    .marker
+        &_h1::before
+            top: 42px
+            height: 10px
+            left: 5px
+
+        &_h2::before
+            top: 28px
+            height: 10px
+
+        &_h3::before
+            left: 2px
+            top: 24px
+            height: 8px

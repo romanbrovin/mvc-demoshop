@@ -1,0 +1,144 @@
+.product
+
+    .owl-carousel .owl-video-play-icon
+        margin-top: calc(100% / 3)
+        background: url(../images/owl.youtube.png) no-repeat
+
+    &-notice
+        font-size: 18px
+        color: #fff
+        margin-bottom: 10px
+        display: inline-block
+        margin-left: 5px
+
+        span
+            border-radius: 4px
+            padding: 5px 10px
+
+    &__price
+        margin-top: -10px
+        font-weight: 600
+        font-size: 36px
+
+        &_discount
+            color: #dc3545
+
+    .point
+        height: 10px
+        width: 10px
+        border-radius: 10px
+        opacity: .8
+
+    &__out
+        color: #adb5bd
+
+    &__block
+        margin-top: 20px
+        color: #6c757d
+
+    @media only screen and (max-width: 359px)
+        h1
+            margin-top: 20px
+
+        &__basket
+            display: grid
+
+        &__info
+            &-right
+                margin-top: 20px
+
+        &__notice
+            text-align: center
+
+    @media only screen and (min-width: 360px)
+        h1
+            margin-top: 20px
+
+        &__basket
+            display: grid
+
+        &__info
+            &-right
+                margin-top: 20px
+
+        &__notice
+            margin-top: 20px
+            margin-bottom: 20px
+            text-align: center
+
+    @media only screen and (min-width: 411px)
+        h1
+            margin-top: 20px
+
+        &__basket
+            display: grid
+
+        &__info
+            background-color: inherit
+            padding: 0
+            border: 0
+
+            &-right
+                margin-top: 0
+
+        &__notice
+            margin-top: 40px
+            margin-bottom: 20px
+            text-align: center
+
+
+    @media only screen and (min-width: 768px)
+        h1
+            margin-top: 10px
+
+        &__basket
+            display: block
+
+        &__info
+            background-color: #fff
+            border: 1px solid #ddd
+            border-radius: 6px
+            margin-top: 40px
+            padding: 20px
+
+            &-right
+                margin-top: 0
+                padding-left: 0
+
+        &__notice
+            margin-top: 40px
+            margin-bottom: 20px
+            text-align: center
+
+
+    @media only screen and (min-width: 992px)
+        h1
+            margin-top: auto
+
+        &__info
+            &-right
+                padding-left: 60px
+
+        &__notice
+            width: auto
+            text-align: right
+            position: relative
+            margin-top: 0
+            margin-bottom: 10px
+
+        &-notice
+            display: inline-block
+
+    @media only screen and (min-width: 1200px)
+        h1
+            margin-top: auto
+
+        &__notice
+            position: absolute
+            right: 0
+            width: auto
+            text-align: right
+            margin: 0
+
+        &-notice
+            display: block

@@ -1,0 +1,13 @@
+.basket__price {
+  font-weight: bold;
+  border: 0;
+  box-shadow: none !important;
+  border-bottom: 1px solid #ddd !important;
+  padding: 0;
+  height: auto;
+  border-radius: 0;
+  width: 50%;
+  display: inline-block; }
+.basket input:focus {
+  outline: none;
+  border-bottom: 1px solid #ccc !important; }

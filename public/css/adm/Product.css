@@ -1,0 +1,42 @@
+.content_addon {
+  margin-bottom: 10px; }
+
+@media only screen and (min-width: 360px) {
+  .content_storage {
+    width: 100%; }
+
+  .content_addon {
+    width: 100%; } }
+@media only screen and (min-width: 1200px) {
+  .content_addon {
+    width: auto; } }
+@media only screen and (min-width: 1450px) {
+  .content_storage {
+    width: auto; } }
+.booble__percentage {
+  cursor: help;
+  margin-left: 5px;
+  display: inline-block; }
+.booble__info {
+  position: absolute;
+  z-index: 1;
+  top: 15px;
+  left: 30px;
+  display: none;
+  width: 156px;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #000;
+  background-color: #dff0d8; }
+
+.item__photo {
+  position: relative;
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 20px; }
+  .item__photo img {
+    height: 100px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 5px; }

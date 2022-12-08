@@ -1,0 +1,24 @@
+.footer {
+  background-color: #333;
+  margin-top: -300px;
+  min-height: 300px;
+  padding-top: 40px;
+  color: #999;
+  font-size: 14px; }
+  .footer h2, .footer h3 {
+    font-size: 24px; }
+  .footer a:link,
+  .footer a:visited {
+    color: #999;
+    border-bottom: 1px solid #999; }
+  .footer a:hover {
+    color: #ddd;
+    border-bottom: 1px solid #ddd; }
+  .footer .brovin {
+    display: inline;
+    border-radius: 6px;
+    padding: 7px 10px;
+    background-color: #ddd;
+    color: #333; }
+    .footer .brovin:hover {
+      background-color: #eee; }

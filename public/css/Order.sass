@@ -1,0 +1,39 @@
+.order
+    &-details
+        border-radius: 6px
+
+    &-checkout
+        display: grid
+
+    @media only screen and (max-width: 320px)
+        &-details
+            position: inherit
+            width: auto
+            visibility: visible
+            border: 0
+            padding: 0
+            background-color: inherit
+
+        .details-wrapper
+            position: inherit
+            visibility: hidden
+
+    @media only screen and (min-width: 768px)
+        &-checkout
+            display: block
+
+    @media only screen and (min-width: 1200px)
+        &-details
+            width: 350px
+            position: sticky
+            top: 100px
+            margin-left: 30px
+            border: 1px solid #ddd
+            padding: 15px
+            background-color: #fff
+
+        .details-wrapper
+            position: absolute
+            top: 0
+            bottom: 0
+            left: 100%

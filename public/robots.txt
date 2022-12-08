@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /adm/
+Disallow: /cabinet/
+Host: https://DEMOSHOP
+Sitemap: https://DEMOSHOP/sitemap.xml

@@ -1,0 +1,89 @@
+.post
+    min-height: 580px
+    font-size: 14px
+    text-align: center
+
+    &:hover
+        box-shadow: 0 0 10px #ccc
+
+    &__image
+        height: 260px !important
+
+        img
+            max-height: 240px
+
+    &__name
+        height: 100px
+        overflow: hidden
+        margin-bottom: 10px
+
+        h3
+            padding: 0
+            margin: 0
+            line-height: 1
+            font-weight: bold
+            font-size: 20px
+
+        span
+            font-size: 14px
+            font-weight: normal
+            display: block
+            margin-top: 10px
+
+    &__features
+        color: #6c757d
+
+    &__notice
+        position: absolute
+        z-index: 10
+        font-size: 12px
+        top: 5px
+        right: 5px
+
+        &-item
+            padding: 2px 10px
+            color: #fff
+            float: right
+            margin-bottom: 4px
+            border-radius: 6px
+
+    &__price
+        min-height: 50px
+
+        &-new
+            font-size: 24px
+            font-weight: 600
+
+            &_discount
+                color: #dc3545
+
+        &-old
+            color: #adb5bd
+            font-size: 12px
+            line-height: 1
+
+            &::before
+                content: 'Старая цена'
+
+    &__basket
+        margin-top: 10px
+        margin-bottom: 10px
+        position: absolute
+        z-index: 10
+
+    &__out
+        color: #adb5bd
+
+    &__footer
+        color: #adb5bd
+        font-size: 12px
+        position: absolute
+
+        &_remaining
+            bottom: 5px
+
+        &_bonus
+            bottom: 22px
+
+    .point
+        opacity: .7
